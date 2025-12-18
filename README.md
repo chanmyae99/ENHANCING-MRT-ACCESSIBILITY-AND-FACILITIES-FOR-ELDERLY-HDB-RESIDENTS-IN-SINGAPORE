@@ -42,7 +42,7 @@ Not all MRT stations provide equal accessibility support, especially in areas wi
 
 **Datasets Used**
 - MRT station information (station name, line, location)
-- Accessibility facilities data (e.g. lifts, barrier-free access)
+- Accessibility facilities data
 - Elderly population data by planning area
 
 **Initial Data Exploration**
@@ -76,6 +76,17 @@ At the end of this phase, the data was **clean, consistent, and ready for visual
 ---
 
 ### 4️⃣ Modelling (Exploratory Analysis)
+
+Although this is a DPV project, a simple **distance-based analytical approach** was applied to support accessibility analysis.
+
+A **Nearest Neighbour model** from **scikit-learn (`NearestNeighbors`)** was used to:
+
+- Measure the proximity between MRT stations and nearby residential or accessibility-related locations
+- Quantify accessibility based on shortest distance
+- Support objective comparison between stations
+
+This approach does **not perform prediction**.  
+It is used purely as an **analytical technique** to calculate spatial proximity and accessibility indicators.
 
 As this is a **DPV project**, modelling focuses on **descriptive and exploratory analysis**, not machine learning.
 
@@ -122,7 +133,6 @@ The dashboard enables users to explore insights interactively and supports infor
 
 - **Python** (Pandas, NumPy)
 - **Power BI** (DAX, interactive dashboards)
-- **Excel** (initial data inspection)
 - Public open datasets (Singapore)
 
 ---
@@ -137,12 +147,3 @@ This project demonstrates my ability to:
 - Build interactive dashboards
 - Translate data insights into real-world recommendations
 
-These skills are relevant for **Data Analyst, Data Engineering, and AI internships**.
-
----
-
-## 📬 Contact
-
-Name: **Chan Myae Aung**  
-Course: **Diploma in AI & Data Engineering (NYP)**  
-Portfolio: **https://chanmyaeaungeduval.wixsite.com/my-site-4**
